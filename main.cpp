@@ -43,27 +43,9 @@ void localInput(){
     #define debug(x...)
     #endif
 }
- int fun (int x){
-         string s = to_string(x);
-         char maxi = *max_element(s.begin(), s.end());
-        cout<<(maxi - '0') * s.size()<<endl;
-         return (maxi - '0') * s.length();
-        
-    }
-    int sumOfEncryptedInt(vector<int>& nums) {
-        int n=nums.size(),s=0;
-        for(int i=0;i<n;i++){
-            if(nums[i]<10){
-                s+=nums[i];
-            }else{
-                s+=fun(nums[i]);
-            }
-        }
-        return s;
-    }
+
 void solve() {
-   int ans=sumOfEncryptedInt({10,21,31});
-   cout<<ans;
+   
 }
  
  
